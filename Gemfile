@@ -43,6 +43,7 @@ group :development, :test do
   gem 'spring'
 
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
   gem 'pry-rails'
 end
 
@@ -51,3 +52,10 @@ group :development do
   gem 'binding_of_caller'
 end
 
+group :test do
+  gem "faker"
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
+end
