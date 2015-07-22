@@ -37,6 +37,7 @@ gem 'omniauth-twitter', '~> 1.0.1'
 gem 'kaminari'
 gem 'kaminari-bootstrap'
 gem 'ransack'
+gem 'carrierwave'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
