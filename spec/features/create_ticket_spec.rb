@@ -7,6 +7,8 @@ describe 'ユーザがイベント参加表明をする', js: true do
     before do
       visit root_path
       click_link 'Twitterでログイン'
+      expect(page.current_path).to eq root_path
+      expect(page).to have_content 'ログインしました'
       visit event_path(event)
       click_on '参加する'
     end
