@@ -15,6 +15,10 @@ class Event < ActiveRecord::Base
     owner_id == user.id
   end
 
+  def rails?
+    !!(name =~ /Rails/)
+  end
+
   def self.ransackable_attributes(auth_object = nil)
     %w(name start_time)
   end
